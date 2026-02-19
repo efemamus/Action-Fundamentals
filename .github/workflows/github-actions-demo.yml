@@ -12,6 +12,10 @@ on:
   schedule:
     - cron: '15 6 * * SUN'
   workflow_dispatch: 
+    inputs:
+      environment:
+        type: environment
+        required: true
 
 jobs:
    Build:
